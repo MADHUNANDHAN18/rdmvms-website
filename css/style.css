@@ -1,0 +1,103 @@
+/* ===== GLOBAL ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* ===== COLOR VARIABLES ===== */
+:root {
+    --navy: #0d2d5e;
+    --yellow: #f5c800;
+    --white: #ffffff;
+    --light: #f5f0e8;
+}
+
+/* ===== TOPBAR ===== */
+.topbar {
+    background: var(--white);
+    padding: 10px 0;
+    color: var(--navy);
+    font-size: 20px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.topbar-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.topbar-right {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    color: var(--navy);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.topbar span i {
+    margin-right: 5px;
+    color: var(--yellow);
+}
+
+/* ===== TOPBAR LOGO + NAME ===== */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.school-name {
+    line-height: 1.4;
+}
+
+.school-name-full {
+    display: block;
+    color: var(--navy);
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.school-name-short {
+    display: none;
+}
+
+/* ===== ALL MOBILE STYLES ===== */
+@media (max-width: 768px) {
+
+    /* --- Topbar --- */
+    .topbar-right {
+        display: none;
+    }
+
+    .topbar {
+        padding: 8px 0;
+    }
+
+    .topbar-left {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* --- School Name --- */
+    .school-name-full {
+        display: none;
+    }
+
+    .school-name-short {
+        display: block;
+        font-size: 20px;
+        font-weight: 800;
+        color: var(--navy);
+    }
+}
