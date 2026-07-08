@@ -71,8 +71,64 @@ body {
     display: none;
 }
 
-/* ===== ALL MOBILE STYLES ===== */
-@media (max-width: 768px) {
+/* ===== NAVBAR ===== */
+.rdmvms-navbar {
+    background: var(--navy) !important;
+    border-bottom: 3px solid var(--yellow);
+    padding: 10px 0;
+}
+
+.nav-link {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--white) !important;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    padding: 8px 14px !important;
+    transition: color 0.2s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--yellow) !important;
+}
+
+/* ===== DROPDOWN ===== */
+.dropdown-menu {
+    background: var(--navy);
+    border: none;
+    border-top: 2px solid var(--yellow);
+    border-radius: 0 0 8px 8px;
+    padding: 6px 0;
+}
+
+.dropdown-item {
+    color: #c8d8f0;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px 18px;
+    transition: background 1s;
+}
+
+.dropdown-item:hover {
+    background: var(--yellow);
+    color: var(--navy);
+}
+
+/* ===== NAVBAR MOBILE BRAND ===== */
+.navbar-mobile-brand {
+    display: none !important;
+    text-decoration: none;
+}
+
+.navbar-mobile-name {
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--white);
+}
+
+/* ===== ALL MOBILE STYLES (max 991px) ===== */
+@media (max-width: 991px) {
 
     /* --- Topbar --- */
     .topbar-right {
@@ -99,5 +155,36 @@ body {
         font-size: 20px;
         font-weight: 800;
         color: var(--navy);
+        text-align: center;
+    }
+
+    /* --- Navbar Mobile --- */
+    .navbar-mobile-brand {
+        display: block !important;
+    }
+
+    .navbar-toggler {
+        border-color: var(--yellow);
+    }
+
+    .navbar-toggler-icon {
+        filter: invert(1);
+    }
+
+    .navbar-nav {
+        padding: 10px 0;
+    }
+
+    .nav-link {
+        padding: 10px 16px !important;
+        border-bottom: 0.5px solid rgba(255,255,255,0.1);
+    }
+
+    .dropdown-menu {
+        background: rgba(255,255,255,0.05);
+        border-top: none;
+        border-left: 2px solid var(--yellow);
+        margin-left: 16px;
+        border-radius: 0;
     }
 }

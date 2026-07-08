@@ -39,25 +39,27 @@
 </div>
 
 <!-- ===== NAVBAR ===== -->
-<nav class="navbar navbar-expand-lg sticky-top">
+<nav class="navbar navbar-expand-lg sticky-top rdmvms-navbar">
     <div class="container">
+
         <!-- Mobile hamburger button -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <!-- Nav Links -->
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
+            <ul class="navbar-nav mx-auto">
 
                 <!-- Home -->
                 <li class="nav-item">
-                    <a class="nav-link" href="index.php">Home</a>
+                    <a class="nav-link active" href="index.php">Home</a>
                 </li>
 
                 <!-- About Us Dropdown -->
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">About Us</a>
+                    <a class="nav-link dropdown-toggle" href="#" 
+                       data-bs-toggle="dropdown">About Us</a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="about.php#founding">Founding</a></li>
                         <li><a class="dropdown-item" href="about.php#vision">Vision & Motto</a></li>
@@ -67,7 +69,8 @@
 
                 <!-- EC Skills Dropdown -->
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">EC Skills</a>
+                    <a class="nav-link dropdown-toggle" href="#" 
+                       data-bs-toggle="dropdown">EC Skills</a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="ecskills.php#academic">Academic Skills</a></li>
                         <li><a class="dropdown-item" href="ecskills.php#language">Language Skills</a></li>
@@ -77,7 +80,8 @@
 
                 <!-- Facilities Dropdown -->
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Facilities</a>
+                    <a class="nav-link dropdown-toggle" href="#" 
+                       data-bs-toggle="dropdown">Facilities</a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="facilities.php#playzone">Play Zone</a></li>
                         <li><a class="dropdown-item" href="facilities.php#classroom">Classroom</a></li>
@@ -89,7 +93,8 @@
 
                 <!-- Gallery Dropdown -->
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Gallery</a>
+                    <a class="nav-link dropdown-toggle" href="#" 
+                       data-bs-toggle="dropdown">Gallery</a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="gallery.php#annual">Annual Day</a></li>
                         <li><a class="dropdown-item" href="gallery.php#sports">Sports Day</a></li>

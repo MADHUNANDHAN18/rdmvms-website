@@ -3,3 +3,5 @@
 <h1 style="text-align:center; padding:50px; color:#0d2d5e;">
     Homepage coming soon!
 </h1>
+
+<?php include 'includes/footer.php'; ?>
