@@ -85,9 +85,31 @@ body {
     text-transform: uppercase;
     letter-spacing: 0.03em;
     padding: 8px 14px !important;
-    transition: color 0.2s;
+    transition: color 0.3s ease-in-out;
+    position: relative;
 }
 
+/* Hidden underline starting state (Using ::before to protect dropdown arrows) */
+.nav-link::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: 2px; 
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--yellow);
+    transition: width 0.3s ease-in-out;
+    z-index: 10;
+}
+
+/* Underline expand on hover/active */
+.nav-link:hover::before,
+.nav-link.active::before {
+    width: 80%; 
+}
+
+/* Text color change on hover/active */
 .nav-link:hover,
 .nav-link.active {
     color: var(--yellow) !important;
@@ -107,13 +129,28 @@ body {
     font-size: 14px;
     font-weight: 600;
     padding: 8px 18px;
-    transition: background 1s;
+    /* transition: background 1s; */
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .dropdown-item:hover {
     background: var(--yellow);
     color: var(--navy);
 }
+
+/* ===== HOVER DROPDOWN (Desktop only) ===== */
+@media (min-width: 992px) {
+
+    .dropdown:hover > .dropdown-menu {
+        display: block !important;
+        margin-top: 0;
+    }
+
+    .dropdown:hover > .nav-link {
+        color: var(--yellow) !important;
+    }
+}
+
 
 /* ===== NAVBAR MOBILE BRAND ===== */
 .navbar-mobile-brand {
@@ -126,6 +163,30 @@ body {
     font-weight: 800;
     color: var(--white);
 }
+/* ===== MEDIUM SCREENS (992px - 1200px) ===== */
+@media (min-width: 992px) and (max-width: 1200px) {
+
+    /* Shrink topbar font slightly */
+    .topbar {
+        font-size: 14px;
+    }
+
+    .topbar-right {
+        font-size: 14px;
+        gap: 12px;
+    }
+
+    .school-name-full {
+        font-size: 13px;
+    }
+
+    /* Shrink nav links slightly */
+    .nav-link {
+        font-size: 13px !important;
+        padding: 8px 10px !important;
+    }
+}
+
 
 /* ===== ALL MOBILE STYLES (max 991px) ===== */
 @media (max-width: 991px) {
@@ -178,6 +239,11 @@ body {
     .nav-link {
         padding: 10px 16px !important;
         border-bottom: 0.5px solid rgba(255,255,255,0.1);
+    }
+    
+    /* Disables the underline animation on mobile to keep the menu clean */
+    .nav-link::before {
+        display: none;
     }
 
     .dropdown-menu {

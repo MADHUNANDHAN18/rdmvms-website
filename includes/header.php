@@ -53,58 +53,58 @@
 
                 <!-- Home -->
                 <li class="nav-item">
-                    <a class="nav-link active" href="index.php">Home</a>
+                    <a class="nav-link active" href="index.php">HOME</a>
                 </li>
 
                 <!-- About Us Dropdown -->
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" 
-                       data-bs-toggle="dropdown">About Us</a>
+                       data-bs-toggle="dropdown">ABOUT US</a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="about.php#founding">Founding</a></li>
-                        <li><a class="dropdown-item" href="about.php#vision">Vision & Motto</a></li>
-                        <li><a class="dropdown-item" href="about.php#infrastructure">Infrastructure</a></li>
+                        <li><a class="dropdown-item" href="about.php#founding">FOUNDING</a></li>
+                        <li><a class="dropdown-item" href="about.php#vision">VISION & MOTTO</a></li>
+                        <li><a class="dropdown-item" href="about.php#infrastructure">INFRASTRUCTURE</a></li>
                     </ul>
                 </li>
 
                 <!-- EC Skills Dropdown -->
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" 
-                       data-bs-toggle="dropdown">EC Skills</a>
+                       data-bs-toggle="dropdown">EC SKILLS</a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="ecskills.php#academic">Academic Skills</a></li>
-                        <li><a class="dropdown-item" href="ecskills.php#language">Language Skills</a></li>
-                        <li><a class="dropdown-item" href="ecskills.php#physical">Physical Skills</a></li>
+                        <li><a class="dropdown-item" href="ecskills.php#academic">ACADEMIC SKILLS</a></li>
+                        <li><a class="dropdown-item" href="ecskills.php#language">LANGUAGE SKILLS</a></li>
+                        <li><a class="dropdown-item" href="ecskills.php#physical">PHYSICAL SKILLS</a></li>
                     </ul>
                 </li>
 
                 <!-- Facilities Dropdown -->
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" 
-                       data-bs-toggle="dropdown">Facilities</a>
+                       data-bs-toggle="dropdown">FACILITIES</a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="facilities.php#playzone">Play Zone</a></li>
-                        <li><a class="dropdown-item" href="facilities.php#classroom">Classroom</a></li>
-                        <li><a class="dropdown-item" href="facilities.php#labs">Labs</a></li>
-                        <li><a class="dropdown-item" href="facilities.php#avroom">AV Room</a></li>
-                        <li><a class="dropdown-item" href="facilities.php#transport">Transport</a></li>
+                        <li><a class="dropdown-item" href="facilities.php#playzone">PLAY ZONE</a></li>
+                        <li><a class="dropdown-item" href="facilities.php#classroom">CLASSROOM</a></li>
+                        <li><a class="dropdown-item" href="facilities.php#labs">LABS</a></li>
+                        <li><a class="dropdown-item" href="facilities.php#avroom">AV ROOM</a></li>
+                        <li><a class="dropdown-item" href="facilities.php#transport">TRANSPORT</a></li>
                     </ul>
                 </li>
 
                 <!-- Gallery Dropdown -->
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" 
-                       data-bs-toggle="dropdown">Gallery</a>
+                       data-bs-toggle="dropdown">GALLERY</a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="gallery.php#annual">Annual Day</a></li>
-                        <li><a class="dropdown-item" href="gallery.php#sports">Sports Day</a></li>
-                        <li><a class="dropdown-item" href="gallery.php#events">Events & Exhibitions</a></li>
+                        <li><a class="dropdown-item" href="gallery.php#annual">ANNUAL DAY</a></li>
+                        <li><a class="dropdown-item" href="gallery.php#sports">SPORTS DAY</a></li>
+                        <li><a class="dropdown-item" href="gallery.php#events">EVENTS & EXHIBITIONS</a></li>
                     </ul>
                 </li>
 
                 <!-- Contact Us -->
                 <li class="nav-item">
-                    <a class="nav-link" href="contact.php">Contact Us</a>
+                    <a class="nav-link" href="contact.php">CONTACT US</a>
                 </li>
 
             </ul>
