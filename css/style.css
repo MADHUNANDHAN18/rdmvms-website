@@ -469,6 +469,189 @@ body {
     transform: translateY(20px);
 }
 
+/* ============================================
+   FOOTER
+   ============================================ */
+
+.footer {
+    background: var(--navy);
+    color: #c8d8f0;
+    padding: 50px 0 0;
+    margin-top: auto;
+}
+
+/* ===== FOOTER GRID ===== */
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: 40px;
+    padding-bottom: 40px;
+    border-bottom: 0.5px solid rgba(255,255,255,0.1);
+}
+
+/* ===== FOOTER LOGO ===== */
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+
+.footer-school-name {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--white);
+    line-height: 1.4;
+}
+
+/* ===== FOOTER DESCRIPTION ===== */
+.footer-desc {
+    font-size: 13px;
+    color: rgba(255,255,255,0.6);
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* ===== SOCIAL ICONS ===== */
+.footer-social {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-social-link {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #c8d8f0;
+    font-size: 14px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footer-social-link:hover {
+    background: var(--yellow);
+    border-color: var(--yellow);
+    color: var(--navy);
+    transform: translateY(-3px);
+}
+
+/* ===== FOOTER HEADINGS ===== */
+.footer-heading {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--yellow);
+    margin-bottom: 20px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+/* ===== QUICK LINKS ===== */
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-links a {
+    color: rgba(255,255,255,0.6);
+    text-decoration: none;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.2s, gap 0.2s;
+}
+
+.footer-links a i {
+    font-size: 10px;
+    color: var(--yellow);
+}
+
+.footer-links a:hover {
+    color: var(--yellow);
+    gap: 12px;
+}
+
+/* ===== CONTACT DETAILS ===== */
+.footer-contact {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.footer-contact li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 13px;
+    color: rgba(255,255,255,0.6);
+    line-height: 1.6;
+}
+
+.footer-contact li i {
+    color: var(--yellow);
+    font-size: 14px;
+    margin-top: 2px;
+    flex-shrink: 0;
+}
+
+/* ===== MAP LINK ===== */
+.footer-map-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--yellow) !important;
+    text-decoration: none;
+    font-weight: 600;
+    transition: opacity 0.2s;
+}
+
+.footer-map-link:hover {
+    opacity: 0.8;
+}
+
+.footer-map-link i {
+    color: var(--yellow) !important;
+}
+
+/* ===== BOTTOM BAR ===== */
+.footer-bottom {
+    background: rgba(0,0,0,0.2);
+    padding: 16px 0;
+}
+
+.footer-bottom .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.footer-bottom p {
+    font-size: 12px;
+    color: rgba(255,255,255,0.5);
+    margin: 0;
+}
+
+.footer-credit i {
+    color: #e74c3c;
+    font-size: 11px;
+}
+
+
+
 /* ===== MEDIUM SCREENS (992px - 1200px) ===== */
 @media (min-width: 992px) and (max-width: 1200px) {
 
@@ -582,6 +765,18 @@ body {
 
     .hero-section::after {
         display: none;
+    }
+
+    /* ===== FOOTER MOBILE ===== */
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .footer-bottom .container {
+        flex-direction: column;
+        text-align: center;
     }
 
 }
