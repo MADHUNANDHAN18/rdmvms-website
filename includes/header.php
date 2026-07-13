@@ -32,7 +32,7 @@
             </div>
             <div class="topbar-right">
                 <span><i class="fas fa-phone"></i> +91 94427 50550</span>
-                <span><i class="fas fa-envelope"></i> rdmvmatricschool@yahoo.in</span>
+                <span><i class="fas fa-location-dot"></i> Kulumani road, Trichy-102</span>
             </div>
         </div>
     </div>
