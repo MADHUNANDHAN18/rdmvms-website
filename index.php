@@ -100,4 +100,62 @@
 
 </section>
 
+<!-- ===== ABOUT SECTION ===== -->
+<section class="about-section">
+    <div class="about-grid">
+
+        <!-- Left Side — Text -->
+        <div class="about-left">
+
+            <!-- Tag -->
+            <div class="about-tag">
+                <div class="about-tag-line"></div>
+                <span>About Us</span>
+            </div>
+
+            <!-- Title -->
+            <h2 class="about-title">
+                Shaping Futures<br>Since <span class="about-yellow">1977</span>
+            </h2>
+
+            <!-- Description -->
+            <p class="about-desc">
+                R. Dayanidhi Memorial Vidyasala Matriculation School
+                has been enlightening young minds for over four decades.
+                Founded with a vision to provide quality education,
+                we nurture students with strong values, digital learning
+                and a student-centric approach in the heart of Trichy.
+            </p>
+
+            <!-- Stats -->
+            <div class="about-stats">
+                <div class="about-stat">
+                    <div class="about-stat-num">49<span>+</span></div>
+                    <div class="about-stat-label">Years</div>
+                </div>
+                <div class="about-stat">
+                    <div class="about-stat-num">2</div>
+                    <div class="about-stat-label">Institutions</div>
+                </div>
+                <div class="about-stat">
+                    <div class="about-stat-num">10K</div>
+                    <div class="about-stat-label">Sq.ft Playground</div>
+                </div>
+            </div>
+
+            <!-- Button -->
+            <a href="about.php" class="about-btn">
+                <i class="fas fa-arrow-right"></i>
+                Read More
+            </a>
+
+        </div>
+
+        <!-- Right Side — Image -->
+        <div class="about-right">
+            <img src="images/slide1.jpeg" alt="RDMV School" class="about-img">
+        </div>
+
+    </div>
+</section>
 <?php include 'includes/footer.php'; ?>

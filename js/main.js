@@ -89,3 +89,80 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
 });
+
+// ============================================
+// ABOUT SECTION — SCROLL ANIMATIONS + COUNT UP
+// ============================================
+
+// ===== COUNT UP FUNCTION =====
+function countUp(element, target, duration, suffix) {
+    let start = 0;
+    let isK = target === '10K';
+    let endVal = isK ? 10000 : parseInt(target);
+    let increment = endVal / (duration / 16);
+
+    let timer = setInterval(function () {
+        start += increment;
+        if (start >= endVal) {
+            start = endVal;
+            clearInterval(timer);
+        }
+        if (isK) {
+            element.textContent = Math.floor(start / 1000) + 'K+';
+        } else if (suffix === '+') {
+            element.textContent = Math.floor(start) + '+';
+        } else {
+            element.textContent = Math.floor(start);
+        }
+    }, 16);
+}
+// ===== INTERSECTION OBSERVER =====
+const aboutSection = document.querySelector('.about-section');
+
+if (aboutSection) {
+    const observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+
+                // Animate left side
+                const aboutLeft = document.querySelector('.about-left');
+                if (aboutLeft) {
+                    aboutLeft.style.transition = 'opacity 0.7s ease, transform 0.7s ease';
+                    aboutLeft.style.opacity = '1';
+                    aboutLeft.style.transform = 'translateX(0)';
+                }
+
+                // Animate right side
+                const aboutRight = document.querySelector('.about-right');
+                if (aboutRight) {
+                    aboutRight.style.transition = 'opacity 0.7s ease 0.2s, transform 0.7s ease 0.2s';
+                    aboutRight.style.opacity = '1';
+                    aboutRight.style.transform = 'translateX(0)';
+                }
+
+                // Count up stats
+                setTimeout(function () {
+                    const statNums = document.querySelectorAll('.about-stat-num');
+                    if (statNums[0]) countUp(statNums[0], '49', 1500, '+');
+                    if (statNums[1]) countUp(statNums[1], '2', 1000, '');
+                    if (statNums[2]) countUp(statNums[2], '10K', 1500, '');
+                }, 400);
+
+                // Animate button
+                const aboutBtn = document.querySelector('.about-btn');
+                if (aboutBtn) {
+                    setTimeout(function () {
+                        aboutBtn.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                        aboutBtn.style.opacity = '1';
+                        aboutBtn.style.transform = 'translateY(0)';
+                    }, 600);
+                }
+
+                // Run only once
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.3 });
+
+    observer.observe(aboutSection);
+}
