@@ -819,6 +819,193 @@ body {
     /* transform: translateX(10px); */
 }
 
+/* ============================================
+   EC SKILLS SECTION
+   ============================================ */
+
+.ecs-section {
+    background: var(--light);
+    padding: 80px 0;
+}
+
+/* ===== HEADER ===== */
+.ecs-header {
+    text-align: center;
+    margin-bottom: 50px;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.ecs-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 11px;
+    font-weight: 700;
+    color: #0d2d5e;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.ecs-tag-line {
+    width: 24px;
+    height: 2px;
+    background: #f5c800;
+    border-radius: 1px;
+}
+
+.ecs-title {
+    font-size: 34px;
+    font-weight: 800;
+    color: #0d2d5e;
+    margin: 0 0 10px;
+}
+
+.ecs-yellow {
+    color: #f5c800;
+}
+
+.ecs-subtitle {
+    font-size: 14px;
+    color: #666666;
+    margin: 0;
+}
+
+/* ===== CARDS GRID ===== */
+.ecs-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    margin-bottom: 40px;
+}
+
+/* ===== CARD ===== */
+.ecs-card {
+    background: #ffffff;
+    border: 0.5px solid #e0e0e0;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.ecs-card:hover {
+    transform: translateY(-6px) !important;
+    box-shadow: 0 12px 30px rgba(13, 45, 94, 0.12);
+}
+
+/* ===== PHOTO ===== */
+.ecs-photo {
+    height: 200px;
+    overflow: hidden;
+}
+
+.ecs-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.ecs-card:hover .ecs-photo img {
+    transform: scale(1.05);
+}
+
+/* ===== CARD BODY ===== */
+.ecs-body {
+    padding: 20px;
+}
+
+.ecs-icon-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.ecs-icon {
+    width: 34px;
+    height: 34px;
+    border-radius: 8px;
+    background: #e8f0fe;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.ecs-icon i {
+    font-size: 16px;
+    color: #0d2d5e;
+}
+
+.ecs-name {
+    font-size: 15px;
+    font-weight: 700;
+    color: #0d2d5e;
+}
+
+.ecs-desc {
+    font-size: 13px;
+    color: #666666;
+    line-height: 1.7;
+    margin-bottom: 14px;
+}
+
+/* ===== PILLS ===== */
+.ecs-pills {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+.ecs-pill {
+    font-size: 11px;
+    padding: 4px 10px;
+    border-radius: 20px;
+    background: #e8f0fe;
+    color: #0d2d5e;
+    font-weight: 600;
+}
+
+/* ===== BUTTON ===== */
+.ecs-btn-wrap {
+    text-align: center;
+    opacity: 0;
+    transform: translateY(10px);
+}
+
+.ecs-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #0d2d5e;
+    color: #ffffff;
+    padding: 12px 28px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    border: 2px solid #0d2d5e;
+    transition: all 0.3s ease;
+}
+
+.ecs-btn:hover {
+    background: transparent;
+    color: #0d2d5e;
+}
+
+.ecs-btn i {
+    transition: transform 0.3s ease;
+}
+
+.ecs-btn:hover i {
+    transform: translateX(4px);
+}
+
 
 /* ===== MEDIUM SCREENS (992px - 1200px) ===== */
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -947,7 +1134,7 @@ body {
         text-align: center;
     }
 
-    /* ===== MOBILE ===== */
+    /* ===== ABOUT US INDEX MOBILE ===== */
 
     .about-grid {
         grid-template-columns: 1fr;
@@ -964,5 +1151,19 @@ body {
 
     .about-right {
         height: 280px;
+    }
+    /* ===== EC SKILLS INDEX MOBILE ===== */
+
+    .ecs-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .ecs-title {
+        font-size: 26px;
+    }
+
+    .ecs-photo {
+        height: 200px;
     }
 }

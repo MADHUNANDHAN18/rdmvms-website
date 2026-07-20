@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 // ============================================
-// ABOUT SECTION — SCROLL ANIMATIONS + COUNT UP
+// ABOUT SECTION INDEX  — SCROLL ANIMATIONS + COUNT UP
 // ============================================
 
 // ===== COUNT UP FUNCTION =====
@@ -165,4 +165,52 @@ if (aboutSection) {
     }, { threshold: 0.3 });
 
     observer.observe(aboutSection);
+}
+
+// ============================================
+// EC SKILLS SECTION INDEX — SCROLL ANIMATIONS
+// ============================================
+
+const ecsSection = document.querySelector('.ecs-section');
+
+if (ecsSection) {
+    const ecsObserver = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+
+                // Animate header
+                const ecsHeader = document.querySelector('.ecs-header');
+                if (ecsHeader) {
+                    ecsHeader.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                    ecsHeader.style.opacity = '1';
+                    ecsHeader.style.transform = 'translateY(0)';
+                }
+
+                // Staggered cards
+                const ecsCards = document.querySelectorAll('.ecs-card');
+                ecsCards.forEach(function (card, index) {
+                    setTimeout(function () {
+                        card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                        card.style.opacity = '1';
+                        card.style.transform = 'translateY(0)';
+                    }, 200 + (index * 150));
+                });
+
+                // Button
+                const ecsBtn = document.querySelector('.ecs-btn-wrap');
+                if (ecsBtn) {
+                    setTimeout(function () {
+                        ecsBtn.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                        ecsBtn.style.opacity = '1';
+                        ecsBtn.style.transform = 'translateY(0)';
+                    }, 700);
+                }
+
+                // Run once
+                ecsObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.2 });
+
+    ecsObserver.observe(ecsSection);
 }

@@ -158,4 +158,99 @@
 
     </div>
 </section>
+
+<!-- ===== EC SKILLS SECTION ===== -->
+<section class="ecs-section">
+    <div class="container">
+
+        <!-- Section Header -->
+        <div class="ecs-header">
+            <div class="ecs-tag">
+                <div class="ecs-tag-line"></div>
+                <span>Beyond Academics</span>
+                <div class="ecs-tag-line"></div>
+            </div>
+            <h2 class="ecs-title">Extra Curricular <span class="ecs-yellow">Skills</span></h2>
+            <p class="ecs-subtitle">Nurturing well-rounded individuals through diverse skill programmes</p>
+        </div>
+
+        <!-- Cards Grid -->
+        <div class="ecs-grid">
+
+             <!-- Language Skills -->
+            <div class="ecs-card">
+                <div class="ecs-photo">
+                    <img src="images/language.jpg" alt="Language Skills">
+                </div>
+                <div class="ecs-body">
+                    <div class="ecs-icon-row">
+                        <div class="ecs-icon">
+                            <i class="fas fa-language"></i>
+                        </div>
+                        <span class="ecs-name">Language Skills</span>
+                    </div>
+                    <p class="ecs-desc">Enhancing communication through SIP Academy programs that build confidence and language proficiency.</p>
+                    <div class="ecs-pills">
+                        <span class="ecs-pill">SIP Academy</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Academic Skills -->
+            <div class="ecs-card">
+                <div class="ecs-photo">
+                    <img src="images/academic.jpeg" alt="Academic Skills">
+                </div>
+                <div class="ecs-body">
+                    <div class="ecs-icon-row">
+                        <div class="ecs-icon">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <span class="ecs-name">Academic Skills</span>
+                    </div>
+                    <p class="ecs-desc">Nurturing young minds through clubs and activities that develop academic excellence and curiosity.</p>
+                    <div class="ecs-pills">
+                        <span class="ecs-pill">Clubs</span>
+                        <span class="ecs-pill">Activities</span>
+                    </div>
+                </div>
+            </div>
+
+           
+
+            <!-- Physical Skills -->
+            <div class="ecs-card">
+                <div class="ecs-photo">
+                    <img src="images/physical.jpeg" alt="Physical Skills">
+                </div>
+                <div class="ecs-body">
+                    <div class="ecs-icon-row">
+                        <div class="ecs-icon">
+                            <i class="fas fa-running"></i>
+                        </div>
+                        <span class="ecs-name">Physical Skills</span>
+                    </div>
+                    <p class="ecs-desc">Building strong bodies and discipline through Yoga, Silambam, Karate, Athletics and Volleyball.</p>
+                    <div class="ecs-pills">
+                        <span class="ecs-pill">Yoga</span>
+                        <span class="ecs-pill">Silambam</span>
+                        <span class="ecs-pill">Karate</span>
+                        <span class="ecs-pill">Athletics</span>
+                        <span class="ecs-pill">Volleyball</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Button -->
+        <div class="ecs-btn-wrap">
+            <a href="ecskills.php" class="ecs-btn">
+                <i class="fas fa-arrow-right"></i>
+                Explore EC Skills
+            </a>
+        </div>
+
+    </div>
+</section>
 <?php include 'includes/footer.php'; ?>
