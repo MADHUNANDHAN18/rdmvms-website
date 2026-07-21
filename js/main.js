@@ -214,3 +214,50 @@ if (ecsSection) {
 
     ecsObserver.observe(ecsSection);
 }
+// ============================================
+// FACILITIES SECTION — SCROLL ANIMATIONS
+// ============================================
+
+const facSection = document.querySelector('.fac-section');
+
+if (facSection) {
+    const facObserver = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+
+                // Animate header
+                const facHeader = document.querySelector('.fac-header');
+                if (facHeader) {
+                    facHeader.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                    facHeader.style.opacity = '1';
+                    facHeader.style.transform = 'translateY(0)';
+                }
+
+                // Staggered cards
+                const facCards = document.querySelectorAll('.fac-card');
+                facCards.forEach(function (card, index) {
+                    setTimeout(function () {
+                        card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                        card.style.opacity = '1';
+                        card.style.transform = 'translateY(0)';
+                    }, 200 + (index * 150));
+                });
+
+                // Button
+                const facBtn = document.querySelector('.fac-btn-wrap');
+                if (facBtn) {
+                    setTimeout(function () {
+                        facBtn.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                        facBtn.style.opacity = '1';
+                        facBtn.style.transform = 'translateY(0)';
+                    }, 700);
+                }
+
+                // Run once
+                facObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.2 });
+
+    facObserver.observe(facSection);
+}

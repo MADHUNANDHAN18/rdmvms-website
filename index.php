@@ -33,11 +33,11 @@
         <div class="hero-divider animate-fade-up"></div>
 
         <!-- We Prepare -->
-        <div class="hero-small animate-fade-up">We Prepare</div>
+        <div class="hero-small animate-fade-up">We Provide</div>
 
         <!-- Main Heading -->
         <h1 class="hero-heading animate-slide-left">
-            Leaders for <span class="hero-yellow">Tomorrow</span>
+            Education Beyond <span class="hero-yellow">Books</span>
         </h1>
 
         <!-- Feature Items -->
@@ -180,7 +180,7 @@
              <!-- Language Skills -->
             <div class="ecs-card">
                 <div class="ecs-photo">
-                    <img src="images/language.jpg" alt="Language Skills">
+                    <img src="images/language.jpeg" alt="Language Skills">
                 </div>
                 <div class="ecs-body">
                     <div class="ecs-icon-row">
@@ -189,7 +189,7 @@
                         </div>
                         <span class="ecs-name">Language Skills</span>
                     </div>
-                    <p class="ecs-desc">Enhancing communication through SIP Academy programs that build confidence and language proficiency.</p>
+                    <p class="ecs-desc">We nurture confident communicators by strengthening student's Language proficiency skills through interactive learning in digitally equipped classrooms with projectors, audio systems, and multimedia resources.</p>
                     <div class="ecs-pills">
                         <span class="ecs-pill">SIP Academy</span>
                     </div>
@@ -248,6 +248,84 @@
             <a href="ecskills.php" class="ecs-btn">
                 <i class="fas fa-arrow-right"></i>
                 Explore EC Skills
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<!-- ===== FACILITIES SECTION ===== -->
+<section class="fac-section">
+    <div class="container">
+
+        <!-- Section Header -->
+        <div class="fac-header">
+            <div class="fac-tag">Facilities</div>
+            <h2 class="fac-title">What We <span class="fac-yellow">Provide</span></h2>
+            <p class="fac-subtitle">Providing the best infrastructure for a complete learning experience</p>
+        </div>
+
+        <!-- Cards Grid -->
+        <div class="fac-grid">
+
+            <!-- Classroom -->
+            <div class="fac-card">
+                <div class="fac-photo">
+                    <img src="images/classroom.jpeg" alt="Classroom">
+                    <div class="fac-icon-wrap">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                </div>
+                <div class="fac-body">
+                    <div class="fac-name">Classroom</div>
+                    <p class="fac-desc">Modern well-ventilated classrooms designed to create a conducive learning atmosphere for students.</p>
+                    <a href="facilities.php#classroom" class="fac-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Play Zone — Featured -->
+            <div class="fac-card fac-featured">
+                <div class="fac-photo">
+                    <img src="images/playzone.jpeg" alt="Play Zone">
+                    <div class="fac-icon-wrap">
+                        <i class="fas fa-football-ball"></i>
+                    </div>
+                </div>
+                <div class="fac-body">
+                    <div class="fac-name">Play Zone</div>
+                    <p class="fac-desc">A sprawling 10,000 sq.ft playground giving students ample space to play, run and grow physically.</p>
+                    <a href="facilities.php#playzone" class="fac-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Transport -->
+            <div class="fac-card">
+                <div class="fac-photo">
+                    <img src="images/transport.jpg" alt="Transport">
+                    <div class="fac-icon-wrap">
+                        <i class="fas fa-bus"></i>
+                    </div>
+                </div>
+                <div class="fac-body">
+                    <div class="fac-name">Transport</div>
+                    <p class="fac-desc">Safe and comfortable school buses covering Woriyur locality up to Kulumani for all students.</p>
+                    <a href="facilities.php#transport" class="fac-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Bottom Button -->
+        <div class="fac-btn-wrap">
+            <a href="facilities.php" class="fac-check-btn">
+                <i class="fas fa-arrow-right"></i>
+                Check All Facilities
             </a>
         </div>
 
